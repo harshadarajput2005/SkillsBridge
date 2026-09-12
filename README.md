@@ -1,9 +1,8 @@
 # SkillsBridge – Skill Exchange & Mentorship Platform
 
-SkillsBridge is a web-based platform that connects learners and mentors for skill sharing, guidance, and collaboration.
+[Description]
 
 ## 🚀 Features
-
 - User Registration and Login
 - User Dashboard
 - Find Mentors
@@ -12,10 +11,11 @@ SkillsBridge is a web-based platform that connects learners and mentors for skil
 - Notifications
 - User Profile
 - Responsive Design
-- Easy-to-use Interface
+
+## 🎯 Objective
+The main objective of SkillsBridge is to provide a platform where users can exchange skills, find mentors, request guidance, and learn from each other.
 
 ## 🛠️ Technologies Used
-
 - HTML5
 - CSS3
 - JavaScript
