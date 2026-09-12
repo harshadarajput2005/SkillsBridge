@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>SkillBridge | Requests</title>
+
+<link rel="stylesheet" href="css/requests.css">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+
+<body>
+
+<div class="container">
+
+<!-- Sidebar -->
+
+<div class="sidebar">
+
+<div class="logo">
+<i class="fa-solid fa-graduation-cap"></i>
+<span>SkillBridge</span>
+</div>
+
+<ul>
+
+<li onclick="location.href='dashboard.html'">
+<i class="fa-solid fa-house"></i>
+Dashboard
+</li>
+
+<li onclick="location.href='mentors.html'">
+<i class="fa-solid fa-users"></i>
+Find Mentor
+</li>
+
+<li onclick="location.href='myskills.html'">
+<i class="fa-solid fa-code"></i>
+My Skills
+</li>
+
+<li class="active">
+<i class="fa-solid fa-paper-plane"></i>
+Requests
+</li>
+
+<li onclick="location.href='notifications.html'">
+<i class="fa-solid fa-bell"></i>
+Notifications
+</li>
+
+<li onclick="location.href='settings.html'">
+<i class="fa-solid fa-gear"></i>
+Settings
+</li>
+
+<li id="logoutBtn">
+<i class="fa-solid fa-right-from-bracket"></i>
+Logout
+</li>
+
+</ul>
+
+</div>
+
+<!-- Main -->
+
+<div class="main">
+
+<!-- Topbar -->
+
+<div class="topbar">
+
+<div class="search-box">
+
+<i class="fa-solid fa-magnifying-glass"></i>
+
+<input
+type="text"
+placeholder="Search Requests..."
+id="searchInput">
+
+</div>
+
+<div class="top-right">
+
+<button class="theme-btn">
+<i class="fa-solid fa-moon"></i>
+</button>
+
+<img src="images/harshu.jpg.jpeg" class="profile">
+
+</div>
+
+</div>
+
+<!-- Heading -->
+
+<div class="page-title">
+
+<h1>My Requests</h1>
+
+<p>
+Track all mentor requests from one place.
+</p>
+
+</div>
+
+<!-- Filter -->
+
+<div class="filter-bar">
+
+<button class="active">
+All
+</button>
+
+<button>
+Pending
+</button>
+
+<button>
+Accepted
+</button>
+
+<button>
+Rejected
+</button>
+
+</div>
+
+<!-- Request Grid -->
+
+<div class="request-grid">
+
+<!-- Card 1 -->
+
+<div class="request-card">
+
+<div class="mentor">
+
+<img src="images/mentor1.jpg">
+
+<div>
+
+<h3>Rahul Sharma</h3>
+
+<span>Java Mentor</span>
+
+</div>
+
+</div>
+
+<div class="status pending">
+Pending
+</div>
+
+<div class="skill">
+
+<i class="fa-solid fa-code"></i>
+
+Java Programming
+
+</div>
+
+<div class="date">
+
+<i class="fa-solid fa-calendar"></i>
+
+13 July 2026
+
+</div>
+
+<div class="buttons">
+
+<button class="view-btn">
+
+View
+
+</button>
+
+<button class="cancel-btn">
+
+Cancel
+
+</button>
+
+</div>
+
+</div>
+
+<!-- Card 2 -->
+
+<div class="request-card">
+
+<div class="mentor">
+
+<img src="images/mentor2.jpg">
+
+<div>
+
+<h3>Priya Patil</h3>
+
+<span>Web Mentor</span>
+
+</div>
+
+</div>
+
+<div class="status accepted">
+Accepted
+</div>
+
+<div class="skill">
+
+<i class="fa-solid fa-laptop-code"></i>
+
+HTML CSS JavaScript
+
+</div>
+
+<div class="date">
+
+<i class="fa-solid fa-calendar"></i>
+
+11 July 2026
+
+</div>
+
+<div class="buttons">
+
+<button class="view-btn">
+
+View
+
+</button>
+
+<button class="chat-btn">
+
+Chat
+
+</button>
+
+</div>
+
+</div>
+
+<!-- Card 3 -->
+
+<div class="request-card">
+
+<div class="mentor">
+
+<img src="images/mentor3.jpg">
+
+<div>
+
+<h3>Amit Kumar</h3>
+
+<span>Python Mentor</span>
+
+</div>
+
+</div>
+
+<div class="status rejected">
+Rejected
+</div>
+
+<div class="skill">
+
+<i class="fa-brands fa-python"></i>
+
+Python
+
+</div>
+
+<div class="date">
+
+<i class="fa-solid fa-calendar"></i>
+
+08 July 2026
+
+</div>
+
+<div class="buttons">
+
+<button class="view-btn">
+
+View
+
+</button>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+<script src="js/requests.js"></script>
+
+</body>
+</html>

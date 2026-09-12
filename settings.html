@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Settings | Skills Bridge</title>
+
+<link rel="stylesheet" href="css/settings.css">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+</head>
+
+
+<body>
+
+
+<div class="container">
+
+
+<!-- Header -->
+
+<header class="topbar">
+
+<h2>
+<i class="fa-solid fa-gear"></i>
+Settings
+</h2>
+
+
+<a href="dashboard.html" class="back-btn">
+
+<i class="fa-solid fa-arrow-left"></i>
+Dashboard
+
+</a>
+
+</header>
+
+
+
+
+<!-- Settings Card -->
+
+
+<section class="settings-card">
+
+
+<h2>
+Appearance
+</h2>
+
+
+<div class="setting-item">
+
+<div>
+
+<h3>
+Dark / Light Mode
+</h3>
+
+<p>
+Change application theme
+</p>
+
+</div>
+
+
+<button id="themeToggle">
+
+🌙 Toggle
+
+</button>
+
+
+</div>
+
+
+
+
+<hr>
+
+
+
+
+<h2>
+Notifications
+</h2>
+
+
+<div class="setting-item">
+
+
+<div>
+
+<h3>
+Email Notifications
+</h3>
+
+<p>
+Receive mentor updates
+</p>
+
+</div>
+
+
+<label class="switch">
+
+<input type="checkbox"
+id="notificationToggle"
+checked>
+
+
+<span class="slider"></span>
+
+</label>
+
+
+</div>
+
+
+
+
+
+<hr>
+
+
+
+<h2>
+Security
+</h2>
+
+
+<div class="password-box">
+
+
+<input type="password"
+id="oldPassword"
+placeholder="Old Password">
+
+
+<input type="password"
+id="newPassword"
+placeholder="New Password">
+
+
+<button id="changePassword">
+
+Change Password
+
+</button>
+
+
+</div>
+
+
+
+
+
+<hr>
+
+
+
+<button id="logoutBtn"
+class="logout-btn">
+
+<i class="fa-solid fa-right-from-bracket"></i>
+
+Logout
+
+</button>
+
+
+
+</section>
+
+
+
+</div>
+
+
+
+<script src="js/settings.js"></script>
+
+
+</body>
+
+</html>

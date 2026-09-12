@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Notifications | SkillsBridge</title>
+
+<link rel="stylesheet" href="css/notifications.css">
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+
+<body>
+
+<div class="container">
+
+<!-- Sidebar -->
+<div class="sidebar">
+
+<div class="logo">
+<i class="fa-solid fa-graduation-cap"></i>
+<span>SkillBridge</span>
+</div>
+
+<ul>
+
+<li onclick="location.href='dashboard.html'">
+<i class="fa-solid fa-house"></i> Dashboard
+</li>
+
+<li onclick="location.href='mentors.html'">
+<i class="fa-solid fa-users"></i> Find Mentor
+</li>
+
+<li onclick="location.href='myskills.html'">
+<i class="fa-solid fa-code"></i> My Skills
+</li>
+
+<li onclick="location.href='requests.html'">
+<i class="fa-solid fa-paper-plane"></i> Requests
+</li>
+
+<li class="active">
+<i class="fa-solid fa-bell"></i> Notifications
+</li>
+
+<li onclick="location.href='settings.html'">
+<i class="fa-solid fa-gear"></i> Settings
+</li>
+
+<li id="logoutBtn">
+<i class="fa-solid fa-right-from-bracket"></i> Logout
+</li>
+
+</ul>
+
+</div>
+
+<!-- Main -->
+
+<div class="main">
+
+<div class="topbar">
+
+<h2>Notifications</h2>
+
+<div class="actions">
+
+<button id="markAll">
+<i class="fa-solid fa-check-double"></i>
+Mark All Read
+</button>
+
+<button class="theme-btn">
+<i class="fa-solid fa-moon"></i>
+</button>
+
+</div>
+
+</div>
+
+<!-- Notification List -->
+
+<div class="notification-list">
+
+<div class="notification unread">
+
+<div class="icon mentor">
+<i class="fa-solid fa-user-check"></i>
+</div>
+
+<div class="content">
+<h3>Mentor Accepted</h3>
+<p>Rahul Sharma accepted your Java mentorship request.</p>
+<span>2 min ago</span>
+</div>
+
+</div>
+
+<div class="notification unread">
+
+<div class="icon message">
+<i class="fa-solid fa-comments"></i>
+</div>
+
+<div class="content">
+<h3>New Message</h3>
+<p>You received a new message from Priya Patil.</p>
+<span>15 min ago</span>
+</div>
+
+</div>
+
+<div class="notification">
+
+<div class="icon skill">
+<i class="fa-solid fa-lightbulb"></i>
+</div>
+
+<div class="content">
+<h3>Skill Recommendation</h3>
+<p>Learn React.js to improve your profile.</p>
+<span>Yesterday</span>
+</div>
+
+</div>
+
+<div class="notification">
+
+<div class="icon reminder">
+<i class="fa-solid fa-calendar-check"></i>
+</div>
+
+<div class="content">
+<h3>Session Reminder</h3>
+<p>Your mentoring session starts tomorrow at 5 PM.</p>
+<span>Yesterday</span>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+<script src="js/notifications.js"></script>
+
+</body>
+</html>

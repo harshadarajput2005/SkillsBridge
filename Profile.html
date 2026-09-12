@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>My Profile | Skills Bridge</title>
+
+    <link rel="stylesheet" href="css/profile.css">
+
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+</head>
+
+
+<body>
+
+
+<div class="container">
+
+
+    <!-- Header -->
+
+    <header class="topbar">
+
+
+        <h2>
+
+            <i class="fa-solid fa-user"></i>
+
+            My Profile
+
+        </h2>
+
+
+
+        <a href="dashboard.html" class="back-btn">
+
+            <i class="fa-solid fa-arrow-left"></i>
+
+            Dashboard
+
+        </a>
+
+
+    </header>
+
+
+
+
+
+    <!-- Profile Card -->
+
+
+    <section class="profile-card">
+
+
+
+        <div class="profile-image">
+
+
+            <img src="images/profile.jpg"
+            id="profileImage"
+            alt="Profile">
+
+
+
+            <label for="uploadImage"
+            class="upload-btn">
+
+                <i class="fa-solid fa-camera"></i>
+
+            </label>
+
+
+            <input type="file"
+            id="uploadImage"
+            hidden>
+
+
+        </div>
+
+
+
+
+        <div class="profile-info">
+
+
+            <h1 id="userName">
+                Harshada Rajput
+            </h1>
+
+
+            <p id="userEmail">
+                harshada@gmail.com
+            </p>
+
+
+            <p class="bio">
+
+                Computer Engineering Student |
+                Full Stack Developer
+
+            </p>
+
+
+            <button id="editProfileBtn">
+
+                <i class="fa-solid fa-pen"></i>
+
+                Edit Profile
+
+            </button>
+
+
+        </div>
+
+
+    </section>
+
+
+
+
+
+    <!-- Details -->
+
+
+    <section class="details-card">
+
+
+        <h2>
+            Profile Details
+        </h2>
+
+
+        <div class="details-grid">
+
+
+            <div>
+
+                <label>
+                    Name
+                </label>
+
+                <input type="text"
+                id="nameInput"
+                value="Harshada Rajput"
+                disabled>
+
+            </div>
+
+
+
+            <div>
+
+                <label>
+                    Email
+                </label>
+
+                <input type="email"
+                id="emailInput"
+                value="harshada@gmail.com"
+                disabled>
+
+            </div>
+
+
+
+
+            <div>
+
+                <label>
+                    Bio
+                </label>
+
+                <textarea id="bioInput"
+                disabled>
+Computer Engineering Student
+                </textarea>
+
+            </div>
+
+
+        </div>
+
+
+        <button id="saveProfileBtn"
+        style="display:none;">
+
+            Save Profile
+
+        </button>
+
+
+    </section>
+
+
+
+
+
+    <!-- Skills -->
+
+
+    <section class="skills-card">
+
+
+        <h2>
+            My Skills
+        </h2>
+
+
+        <div class="skill-list">
+
+
+            <span>
+                HTML
+            </span>
+
+
+            <span>
+                CSS
+            </span>
+
+
+            <span>
+                JavaScript
+            </span>
+
+
+            <span>
+                React
+            </span>
+
+
+            <span>
+                Node.js
+            </span>
+
+
+        </div>
+
+
+    </section>
+
+
+</div>
+
+
+
+
+<script src="js/profile.js"></script>
+
+
+</body>
+
+</html>

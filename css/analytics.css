@@ -1,0 +1,274 @@
+/* ==========================================
+   Analytics Dashboard - Part 11.2
+   Professional CSS
+========================================== */
+
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+
+body{
+
+    min-height:100vh;
+
+    background:
+    linear-gradient(135deg,#0f172a,#1e293b);
+
+    color:white;
+
+}
+
+
+
+.container{
+
+    width:95%;
+
+    max-width:1400px;
+
+    margin:auto;
+
+    padding:30px 0;
+
+}
+
+
+
+
+
+/* Header */
+
+
+.topbar{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    padding:22px 28px;
+
+    background:rgba(255,255,255,.08);
+
+    backdrop-filter:blur(18px);
+
+    border-radius:20px;
+
+    border:1px solid rgba(255,255,255,.12);
+
+    margin-bottom:30px;
+
+}
+
+
+
+.topbar h2{
+
+    font-size:28px;
+
+}
+
+
+
+.topbar i{
+
+    color:#38bdf8;
+
+    margin-right:10px;
+
+}
+
+
+
+.back-btn{
+
+    text-decoration:none;
+
+    color:white;
+
+    background:
+    linear-gradient(135deg,#2563eb,#7c3aed);
+
+    padding:12px 22px;
+
+    border-radius:12px;
+
+    font-weight:600;
+
+}
+
+
+
+
+
+
+/* Stats Cards */
+
+
+.stats{
+
+    display:grid;
+
+    grid-template-columns:
+    repeat(auto-fit,minmax(230px,1fr));
+
+    gap:25px;
+
+    margin-bottom:35px;
+
+}
+
+
+
+.stat-card{
+
+    padding:25px;
+
+    border-radius:22px;
+
+    background:
+    rgba(255,255,255,.08);
+
+    backdrop-filter:blur(18px);
+
+    border:1px solid rgba(255,255,255,.12);
+
+    text-align:center;
+
+    transition:.35s;
+
+}
+
+
+
+.stat-card:hover{
+
+    transform:translateY(-8px);
+
+    box-shadow:
+    0 15px 35px rgba(37,99,235,.25);
+
+}
+
+
+
+.stat-card i{
+
+    font-size:35px;
+
+    color:#38bdf8;
+
+    margin-bottom:15px;
+
+}
+
+
+
+.stat-card h3{
+
+    font-size:35px;
+
+}
+
+
+
+.stat-card p{
+
+    color:#cbd5e1;
+
+}
+
+
+
+
+
+/* Charts */
+
+
+.charts{
+
+    display:grid;
+
+    grid-template-columns:
+    repeat(auto-fit,minmax(400px,1fr));
+
+    gap:30px;
+
+}
+
+
+
+.chart-card{
+
+    background:
+    rgba(255,255,255,.08);
+
+    backdrop-filter:blur(18px);
+
+    border-radius:22px;
+
+    padding:25px;
+
+    border:1px solid rgba(255,255,255,.12);
+
+}
+
+
+
+.chart-card h2{
+
+    margin-bottom:20px;
+
+    font-size:20px;
+
+}
+
+
+
+
+
+canvas{
+
+    max-height:350px;
+
+}
+
+
+
+
+
+/* Responsive */
+
+
+@media(max-width:700px){
+
+
+    .topbar{
+
+        flex-direction:column;
+
+        gap:15px;
+
+        text-align:center;
+
+    }
+
+
+
+    .charts{
+
+        grid-template-columns:1fr;
+
+    }
+
+
+}

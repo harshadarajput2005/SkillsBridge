@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Admin Dashboard | Skills Bridge</title>
+
+<link rel="stylesheet" href="css/admin.css">
+
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+</head>
+
+
+<body>
+
+
+<div class="admin-container">
+
+
+
+<!-- Sidebar -->
+
+
+<aside class="sidebar">
+
+
+<h2>
+
+<i class="fa-solid fa-user-shield"></i>
+
+Admin Panel
+
+</h2>
+
+
+
+<ul>
+
+
+<li class="active">
+
+<i class="fa-solid fa-chart-line"></i>
+
+Dashboard
+
+</li>
+
+
+<li>
+
+<i class="fa-solid fa-users"></i>
+
+Users
+
+</li>
+
+
+<li>
+
+<i class="fa-solid fa-user-tie"></i>
+
+Mentors
+
+</li>
+
+
+<li>
+
+<i class="fa-solid fa-envelope"></i>
+
+Requests
+
+</li>
+
+
+<li>
+
+<i class="fa-solid fa-gear"></i>
+
+Settings
+
+</li>
+
+
+<li id="logoutBtn">
+
+<i class="fa-solid fa-right-from-bracket"></i>
+
+Logout
+
+</li>
+
+
+</ul>
+
+
+</aside>
+
+
+
+
+
+
+<!-- Main Content -->
+
+
+<main class="main-content">
+
+
+
+<header class="admin-header">
+
+
+<h1>
+Welcome Admin 👋
+</h1>
+
+
+<div class="admin-profile">
+
+<i class="fa-solid fa-circle-user"></i>
+
+Admin
+
+</div>
+
+
+</header>
+
+
+
+
+
+
+<!-- Stats -->
+
+
+<section class="stats">
+
+
+
+<div class="stat-card">
+
+<i class="fa-solid fa-users"></i>
+
+<h2 id="userCount">
+120
+</h2>
+
+<p>
+Total Users
+</p>
+
+</div>
+
+
+
+
+
+<div class="stat-card">
+
+<i class="fa-solid fa-user-tie"></i>
+
+<h2 id="mentorCount">
+45
+</h2>
+
+<p>
+Total Mentors
+</p>
+
+</div>
+
+
+
+
+
+<div class="stat-card">
+
+<i class="fa-solid fa-code"></i>
+
+<h2 id="skillCount">
+250
+</h2>
+
+<p>
+Skills
+</p>
+
+</div>
+
+
+
+
+
+<div class="stat-card">
+
+<i class="fa-solid fa-envelope"></i>
+
+<h2 id="requestCount">
+80
+</h2>
+
+<p>
+Requests
+</p>
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+<!-- User Management -->
+
+
+<section class="management-card">
+
+
+<h2>
+User Management
+</h2>
+
+
+
+<input type="text"
+id="searchUser"
+placeholder="Search User...">
+
+
+
+<table>
+
+
+<thead>
+
+<tr>
+
+<th>Name</th>
+
+<th>Email</th>
+
+<th>Role</th>
+
+<th>Action</th>
+
+</tr>
+
+</thead>
+
+
+
+<tbody id="userTable">
+
+
+<tr>
+
+<td>
+Rahul Sharma
+</td>
+
+<td>
+rahul@gmail.com
+</td>
+
+<td>
+Mentor
+</td>
+
+
+<td>
+
+<button class="delete-btn">
+
+Delete
+
+</button>
+
+</td>
+
+
+</tr>
+
+
+</tbody>
+
+
+</table>
+
+
+</section>
+
+
+
+
+
+
+
+<!-- Chart -->
+
+
+<section class="chart-card">
+
+
+<h2>
+Platform Growth
+</h2>
+
+
+<canvas id="adminChart"></canvas>
+
+
+</section>
+
+
+
+</main>
+
+
+
+</div>
+
+
+
+
+<script src="js/admin.js"></script>
+
+
+</body>
+
+</html>

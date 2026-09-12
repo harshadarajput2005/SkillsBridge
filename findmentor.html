@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Find Mentor | SkillBridge</title>
+
+    <link rel="stylesheet" href="css/mentor.css">
+
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet">
+</head>
+
+<body>
+
+<div class="container">
+
+    <!-- Sidebar -->
+
+    <aside class="sidebar">
+
+        <div class="logo">
+            <i class="fa-solid fa-graduation-cap"></i>
+            <h2>SkillBridge</h2>
+        </div>
+
+        <ul>
+
+            <li>
+                <a href="dashboard.html">
+                    <i class="fa-solid fa-house"></i>
+                    Dashboard
+                </a>
+            </li>
+
+            <li class="active">
+                <a href="findmentor.html">
+                    <i class="fa-solid fa-user-group"></i>
+                    Find Mentor
+                </a>
+            </li>
+
+            <li>
+                <a href="myskills.html">
+                    <i class="fa-solid fa-code"></i>
+                    My Skills
+                </a>
+            </li>
+
+            <li>
+                <a href="requests.html">
+                    <i class="fa-solid fa-paper-plane"></i>
+                    Requests
+                </a>
+            </li>
+
+            <li>
+                <a href="notifications.html">
+                    <i class="fa-solid fa-bell"></i>
+                    Notifications
+                </a>
+            </li>
+
+            <li>
+                <a href="settings.html">
+                    <i class="fa-solid fa-gear"></i>
+                    Settings
+                </a>
+            </li>
+
+            <li>
+                <a href="login.html">
+                    <i class="fa-solid fa-right-from-bracket"></i>
+                    Logout
+                </a>
+            </li>
+
+        </ul>
+
+    </aside>
+
+    <!-- Main -->
+
+    <main class="main">
+
+        <header class="topbar">
+
+            <h1>Find Mentor</h1>
+
+            <div class="search">
+
+                <i class="fa-solid fa-magnifying-glass"></i>
+
+                <input
+                type="text"
+                id="mentorSearch"
+                placeholder="Search mentor or skill...">
+
+            </div>
+
+        </header>
+
+        <!-- Filter -->
+
+        <section class="filter-section">
+
+            <button class="filter-btn active">All</button>
+            <button class="filter-btn">Web</button>
+            <button class="filter-btn">Java</button>
+            <button class="filter-btn">Python</button>
+            <button class="filter-btn">AI/ML</button>
+            <button class="filter-btn">UI/UX</button>
+
+        </section>
+
+        <!-- Mentor Cards -->
+
+        <section class="mentor-grid">
+
+            <div class="mentor-card">
+
+                <img src="images/mentor2.jpg" alt="Mentor">
+
+                <h3>Rahul Sharma</h3>
+
+                <p>Full Stack Developer</p>
+
+                <span>⭐ 4.9 | 8 Years Experience</span>
+
+                <div class="skills">
+
+                    <span>HTML</span>
+                    <span>CSS</span>
+                    <span>Node.js</span>
+
+                </div>
+
+                <div class="buttons">
+
+                    <button class="profile-btn">
+                        View Profile
+                    </button>
+
+                    <button class="request-btn">
+                        Send Request
+                    </button>
+
+                </div>
+
+            </div>
+
+            <div class="mentor-card">
+
+                <img src="images/mentor1.jpg" alt="Mentor">
+
+                <h3>Priya Patil</h3>
+
+                <p>UI / UX Designer</p>
+
+                <span>⭐ 4.8 | 6 Years Experience</span>
+
+                <div class="skills">
+
+                    <span>Figma</span>
+                    <span>Adobe XD</span>
+                    <span>UI Design</span>
+
+                </div>
+
+                <div class="buttons">
+
+                    <button class="profile-btn">
+                        View Profile
+                    </button>
+
+                    <button class="request-btn">
+                        Send Request
+                    </button>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+</div>
+
+<script src="js/mentor.js"></script>
+
+</body>
+</html>

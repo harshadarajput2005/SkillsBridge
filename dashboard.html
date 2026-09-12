@@ -1,0 +1,885 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>SkillBridge | Dashboard</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/dashboard.css">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet">
+
+</head>
+
+<body>
+
+<div class="dashboard">
+
+    <!-- Sidebar -->
+
+    <aside class="sidebar">
+
+        <div class="logo">
+
+            <i class="fa-solid fa-graduation-cap"></i>
+
+            <h2>SkillBridge</h2>
+
+        </div>
+
+        <ul>
+
+            <li class="active">
+                <a href="dashboard.html">
+                    <i class="fa-solid fa-house"></i>
+                    Dashboard
+                </a>
+            </li>
+
+            <li>
+                <a href="findmentor.html">
+                    <i class="fa-solid fa-user-group"></i>
+                    Find Mentor
+                </a>
+            </li>
+
+            <li>
+                <a href="myskills.html">
+                    <i class="fa-solid fa-code"></i>
+                    My Skills
+                </a>
+            </li>
+
+            <li>
+                <a href="requests.html">
+                    <i class="fa-solid fa-paper-plane"></i>
+                    Requests
+                </a>
+            </li>
+
+            <li>
+                <a href="notifications.html">
+                    <i class="fa-solid fa-bell"></i>
+                    Notifications
+                </a>
+            </li>
+
+            <li>
+                <a href="profile.html">
+                    <i class="fa-solid fa-user"></i>
+                    Profile
+                </a>
+            </li>
+
+            <li>
+                <a href="settings.html">
+                    <i class="fa-solid fa-gear"></i>
+                    Settings
+                </a>
+            </li>
+
+            <li>
+                <a href="#" id="logoutBtn">
+                    <i class="fa-solid fa-right-from-bracket"></i>
+                    Logout
+                </a>
+            </li>
+
+        </ul>
+
+    </aside>
+
+    <!-- Main Content -->
+
+    <main class="main-content">
+
+        <!-- Header -->
+
+        <header class="topbar">
+
+            <div class="search-box">
+
+                <i class="fa-solid fa-magnifying-glass"></i>
+
+                <input
+                type="text"
+                placeholder="Search mentors, skills, requests...">
+
+            </div>
+
+            <div class="top-right">
+
+                <button class="theme-btn">
+                    <i class="fa-solid fa-moon"></i>
+                </button>
+
+                <div class="notification">
+
+                    <i class="fa-solid fa-bell"></i>
+
+                    <span>5</span>
+
+                </div>
+
+                <div class="profile">
+
+                    <img src="images/harshu.jpg.jpeg" alt="User">
+
+                    <div>
+
+                        <h4 id="username">Harshada</h4>
+
+                        <small>Student</small>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </header>
+
+        <!-- पुढचा Part 8.2 इथून सुरू होईल -->
+         <!-- =========================
+     Welcome Banner
+========================= -->
+
+<section class="welcome-banner">
+
+    <div class="welcome-text">
+
+        <h1>Welcome Back,
+            <span id="welcomeUser">Harshada 👋</span>
+        </h1>
+
+        <p>
+            Manage your skills, connect with mentors,
+            track requests and grow your career from one dashboard.
+        </p>
+
+        <div class="banner-buttons">
+
+            <button id="findMentorBtn">
+                <i class="fa-solid fa-user-group"></i>
+                Find Mentor
+            </button>
+
+            <button id="addSkillBtn" class="secondary-btn">
+                <i class="fa-solid fa-plus"></i>
+                Add Skill
+            </button>
+
+        </div>
+
+    </div>
+
+    <div class="welcome-image">
+
+        <i class="fa-solid fa-laptop-code"></i>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     Statistics Cards
+========================= -->
+
+<section class="stats-container">
+
+    <div class="stat-card blue">
+
+        <div class="icon">
+            <i class="fa-solid fa-user-group"></i>
+        </div>
+
+        <h2>245</h2>
+
+        <p>Total Mentors</p>
+
+        <small>+18 this month</small>
+
+    </div>
+
+
+    <div class="stat-card green">
+
+        <div class="icon">
+            <i class="fa-solid fa-code"></i>
+        </div>
+
+        <h2>38</h2>
+
+        <p>My Skills</p>
+
+        <small>5 New Skills Added</small>
+
+    </div>
+
+
+    <div class="stat-card orange">
+
+        <div class="icon">
+            <i class="fa-solid fa-paper-plane"></i>
+        </div>
+
+        <h2>16</h2>
+
+        <p>Pending Requests</p>
+
+        <small>3 Awaiting Response</small>
+
+    </div>
+
+
+    <div class="stat-card purple">
+
+        <div class="icon">
+            <i class="fa-solid fa-award"></i>
+        </div>
+
+        <h2>92%</h2>
+
+        <p>Profile Completion</p>
+
+        <small>Excellent Progress</small>
+
+    </div>
+
+</section>
+
+<!-- ==========================
+     Analytics Section
+=========================== -->
+
+<section class="analytics">
+
+    <!-- Weekly Activity -->
+
+    <div class="chart-card">
+
+        <div class="card-header">
+
+            <h3>
+                <i class="fa-solid fa-chart-line"></i>
+                Weekly Activity
+            </h3>
+
+            <select id="activityFilter">
+                <option>This Week</option>
+                <option>Last Week</option>
+                <option>This Month</option>
+            </select>
+
+        </div>
+
+        <canvas id="activityChart"></canvas>
+
+    </div>
+
+    <!-- Skills Distribution -->
+
+    <div class="chart-card">
+
+        <div class="card-header">
+
+            <h3>
+                <i class="fa-solid fa-chart-pie"></i>
+                Skills Distribution
+            </h3>
+
+        </div>
+
+        <canvas id="skillsChart"></canvas>
+
+    </div>
+
+</section>
+
+
+<!-- ==========================
+     Dashboard Analytics Cards
+=========================== -->
+
+<section class="analytics-cards">
+
+    <div class="analytics-box">
+
+        <div class="icon blue">
+
+            <i class="fa-solid fa-users"></i>
+
+        </div>
+
+        <div>
+
+            <h2>185</h2>
+
+            <p>Active Students</p>
+
+        </div>
+
+    </div>
+
+    <div class="analytics-box">
+
+        <div class="icon green">
+
+            <i class="fa-solid fa-user-check"></i>
+
+        </div>
+
+        <div>
+
+            <h2>67</h2>
+
+            <p>Available Mentors</p>
+
+        </div>
+
+    </div>
+
+    <div class="analytics-box">
+
+        <div class="icon orange">
+
+            <i class="fa-solid fa-comments"></i>
+
+        </div>
+
+        <div>
+
+            <h2>142</h2>
+
+            <p>Mentorship Sessions</p>
+
+        </div>
+
+    </div>
+
+    <div class="analytics-box">
+
+        <div class="icon purple">
+
+            <i class="fa-solid fa-star"></i>
+
+        </div>
+
+        <div>
+
+            <h2>4.9</h2>
+
+            <p>Average Rating</p>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ==========================
+     Top Mentors Section
+========================== -->
+
+<section class="dashboard-grid">
+
+    <div class="top-mentors">
+
+        <div class="section-header">
+
+            <h3>
+                <i class="fa-solid fa-user-tie"></i>
+                Top Mentors
+            </h3>
+
+            <a href="findmentor.html">View All</a>
+
+        </div>
+
+        <div class="mentor-list">
+
+            <div class="mentor-card">
+
+                <img src="images/mentor3.jpg" alt="mentor">
+
+                <div>
+
+                    <h4>Rahul Sharma</h4>
+
+                    <p>Full Stack Developer</p>
+
+                    <span>⭐ 4.9 Rating</span>
+
+                </div>
+
+            </div>
+
+            <div class="mentor-card">
+
+                <img src="images/mentor2.jpg" alt="mentor">
+
+                <div>
+
+                    <h4>Priya Patil</h4>
+
+                    <p>UI / UX Designer</p>
+
+                    <span>⭐ 4.8 Rating</span>
+
+                </div>
+
+            </div>
+
+            <div class="mentor-card">
+
+                <img src="images/mentor1.jpg" alt="mentor">
+
+                <div>
+
+                    <h4>Amit Verma</h4>
+
+                    <p>Python Mentor</p>
+
+                    <span>⭐ 4.7 Rating</span>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- Trending Skills -->
+
+    <div class="trending-skills">
+
+        <div class="section-header">
+
+            <h3>
+                <i class="fa-solid fa-fire"></i>
+                Trending Skills
+            </h3>
+
+        </div>
+
+        <div class="skill-tags">
+
+            <span>React JS</span>
+            <span>Node JS</span>
+            <span>Python</span>
+            <span>MongoDB</span>
+            <span>AI & ML</span>
+            <span>Java</span>
+            <span>UI/UX</span>
+            <span>Cloud Computing</span>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ==========================
+     Recent Activities
+========================== -->
+
+<section class="recent-activity">
+
+    <div class="section-header">
+
+        <h3>
+            <i class="fa-solid fa-clock-rotate-left"></i>
+            Recent Activities
+        </h3>
+
+    </div>
+
+    <div class="activity-list">
+
+        <div class="activity-item">
+
+            <div class="activity-icon">
+                <i class="fa-solid fa-user-plus"></i>
+            </div>
+
+            <div>
+
+                <h4>New Mentor Connected</h4>
+
+                <p>You connected with Rahul Sharma</p>
+
+            </div>
+
+            <span>2 min ago</span>
+
+        </div>
+
+        <div class="activity-item">
+
+            <div class="activity-icon">
+                <i class="fa-solid fa-code"></i>
+            </div>
+
+            <div>
+
+                <h4>Skill Added</h4>
+
+                <p>React JS added to your profile</p>
+
+            </div>
+
+            <span>1 hour ago</span>
+
+        </div>
+
+        <div class="activity-item">
+
+            <div class="activity-icon">
+                <i class="fa-solid fa-paper-plane"></i>
+            </div>
+
+            <div>
+
+                <h4>Request Sent</h4>
+
+                <p>Mentorship request sent successfully</p>
+
+            </div>
+
+            <span>Yesterday</span>
+
+        </div>
+
+    </div>
+
+</section>
+<!-- ==========================
+     Upcoming Sessions
+========================== -->
+
+<section class="dashboard-bottom">
+
+    <!-- Upcoming Sessions -->
+
+    <div class="upcoming-sessions">
+
+        <div class="section-header">
+
+            <h3>
+                <i class="fa-solid fa-calendar-days"></i>
+                Upcoming Mentorship Sessions
+            </h3>
+
+            <a href="#">View Schedule</a>
+
+        </div>
+
+        <div class="session-card">
+
+            <div class="session-date">
+                <h2>15</h2>
+                <span>JUL</span>
+            </div>
+
+            <div class="session-info">
+                <h4>Web Development Roadmap</h4>
+                <p>Rahul Sharma • 10:00 AM - 11:00 AM</p>
+            </div>
+
+            <button class="join-btn">
+                Join
+            </button>
+
+        </div>
+
+        <div class="session-card">
+
+            <div class="session-date">
+                <h2>16</h2>
+                <span>JUL</span>
+            </div>
+
+            <div class="session-info">
+                <h4>React JS Live Workshop</h4>
+                <p>Priya Patil • 2:00 PM - 3:30 PM</p>
+            </div>
+
+            <button class="join-btn">
+                Join
+            </button>
+
+        </div>
+
+    </div>
+
+
+    <!-- Quick Actions -->
+
+    <div class="quick-actions">
+
+        <div class="section-header">
+
+            <h3>
+                <i class="fa-solid fa-bolt"></i>
+                Quick Actions
+            </h3>
+
+        </div>
+
+        <button>
+            <i class="fa-solid fa-user-plus"></i>
+            Find Mentor
+        </button>
+
+        <button>
+            <i class="fa-solid fa-plus"></i>
+            Add New Skill
+        </button>
+
+        <button>
+            <i class="fa-solid fa-paper-plane"></i>
+            View Requests
+        </button>
+
+        <button>
+            <i class="fa-solid fa-bell"></i>
+            Notifications
+        </button>
+
+    </div>
+
+</section>
+
+
+<!-- ==========================
+     Achievements
+========================== -->
+
+<section class="achievements">
+
+    <div class="section-header">
+
+        <h3>
+            <i class="fa-solid fa-trophy"></i>
+            Your Achievements
+        </h3>
+
+    </div>
+
+    <div class="achievement-grid">
+
+        <div class="achievement-card">
+
+            <i class="fa-solid fa-medal"></i>
+
+            <h4>Top Learner</h4>
+
+            <p>Completed 20 Skills Successfully</p>
+
+        </div>
+
+        <div class="achievement-card">
+
+            <i class="fa-solid fa-star"></i>
+
+            <h4>Active Member</h4>
+
+            <p>Connected with 15 Mentors</p>
+
+        </div>
+
+        <div class="achievement-card">
+
+            <i class="fa-solid fa-fire"></i>
+
+            <h4>Fast Learner</h4>
+
+            <p>7 Day Learning Streak</p>
+
+        </div>
+
+    </div>
+
+</section>
+<!-- ==========================
+     Online Mentors
+========================== -->
+
+<section class="bottom-grid">
+
+    <div class="online-mentors">
+
+        <div class="section-header">
+
+            <h3>
+                <i class="fa-solid fa-circle-dot"></i>
+                Online Mentors
+            </h3>
+
+            <a href="findmentor.html">View All</a>
+
+        </div>
+
+        <div class="mentor-online">
+
+            <img src="images/mentor1.jpg" alt="">
+
+            <div>
+                <h4>Rahul Sharma</h4>
+                <p>Java Developer</p>
+            </div>
+
+            <span class="online"></span>
+
+        </div>
+
+        <div class="mentor-online">
+
+            <img src="images/mentor2.jpg" alt="">
+
+            <div>
+                <h4>Priya Patil</h4>
+                <p>UI / UX Designer</p>
+            </div>
+
+            <span class="online"></span>
+
+        </div>
+
+        <div class="mentor-online">
+
+            <img src="images/mentor3.jpg" alt="">
+
+            <div>
+                <h4>Amit Verma</h4>
+                <p>Python Mentor</p>
+            </div>
+
+            <span class="online"></span>
+
+        </div>
+
+    </div>
+
+
+    <!-- Recent Messages -->
+
+    <div class="recent-messages">
+
+        <div class="section-header">
+
+            <h3>
+                <i class="fa-solid fa-comments"></i>
+                Recent Messages
+            </h3>
+
+        </div>
+
+        <div class="message">
+
+            <i class="fa-solid fa-message"></i>
+
+            <div>
+
+                <h4>Rahul Sharma</h4>
+
+                <p>Your mentorship request has been accepted.</p>
+
+            </div>
+
+        </div>
+
+        <div class="message">
+
+            <i class="fa-solid fa-message"></i>
+
+            <div>
+
+                <h4>Priya Patil</h4>
+
+                <p>Workshop starts tomorrow at 2 PM.</p>
+
+            </div>
+
+        </div>
+
+        <div class="message">
+
+            <i class="fa-solid fa-message"></i>
+
+            <div>
+
+                <h4>Admin</h4>
+
+                <p>Complete your profile to unlock more mentors.</p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ==========================
+     Announcement
+========================== -->
+
+<section class="announcement">
+
+    <div class="announcement-box">
+
+        <i class="fa-solid fa-bullhorn"></i>
+
+        <div>
+
+            <h3>Platform Announcement</h3>
+
+            <p>
+                🎉 New AI & Machine Learning Mentors have joined SkillBridge.
+                Explore mentors and send mentorship requests today.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ==========================
+     Footer
+========================== -->
+
+<footer class="dashboard-footer">
+
+    <p>
+
+        © 2026 SkillBridge |
+        Skill Exchange & Mentorship Platform
+
+    </p>
+
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script src="js/dashboard.js"></script>
+
+</main>
+
+</div>
+
+</body>
+</html>
